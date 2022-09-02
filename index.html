@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Vector.png" alt="Logo" onclick="home()">
+        </div>
+        <div class="titulo-principal">
+            <h1>Ingrese el texto aqui</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <form action="" class="flex-form">
+
+            <div class="caja-texto">
+                <textarea id="caja-de-texto" class="input-ppal" name="caja-de-texto" type="text"
+                    placeholder="Haz click para escribir"></textarea>
+                <div class="pie-texto">
+                    <p>Sólo letras minúsculas y sin acentos</p>
+                </div>
+            </div>
+            <div class="caja-botones">
+                <input id="encriptame" class="boton" type="submit" value="Encriptar">
+                <input id="desencriptame" class="boton" type="submit" value="Desencriptar">
+            </div>
+        </form>
+
+        <div class="lateral sin-msj" id="sin-mensaje">
+            <img src="img/Muñeco.png" alt="Persona buscando">
+            <p class="empty">
+                Ningún mensaje fue encontrado. Ingresa el texto que deseas encriptar o desencriptar
+            </p>
+        </div>
+        <div id="con-mensaje" class="lateral con-msj">
+            <textarea id="msj-encriptado" class="input-secundario" name="msj-encriptado" type="text" cols="15"
+                rows="10"></textarea>
+            <input id="copiame" class="boton-copiar" type="submit"  value="Copiar">
+        </div>
+
+
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

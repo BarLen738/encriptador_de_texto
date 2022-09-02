@@ -1,0 +1,515 @@
+* {
+    font-family: 'BIZ UDMincho', serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: rgb(3, 3, 126);
+    background-image: url(/img/130\ Full\ Metal.png);
+}
+
+@media only screen and (max-width: 450px) {
+
+    .logo img {
+        width: 5%;
+    }
+
+    .titulo-principal {
+        font-size: 0.7em;
+        margin: 1em;
+        color: #15359e;
+        text-align: center;
+    }
+
+    .flex-form {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .caja-texto {
+        display: block;
+        width: 80%;
+        margin-top: -1em;
+        margin-left: 1em;
+        border-radius: 10%;
+        border-style: none;
+    }
+
+    .input-ppal {
+        width: 100%;
+        height: 200px;
+        margin: 2em 1em;
+        resize: none;
+        border-radius: 5%;
+        border-style: none;
+        padding: 2em;
+        box-shadow: 0px 0px 20px 0px #A5A1EA;
+    }
+
+    .pie-texto {
+        display: block;
+        width: 100%;
+        margin-top: -3em;
+        margin-left: 2em;
+        font-size: 0.6em;
+    }
+
+    .caja-botones {
+        display: block;
+        margin: 10px 50px;
+    }
+
+    .boton,
+    .boton-copiar {
+        font-size: 0.6em;
+        padding: 1.2em;
+        background-color: #15359e;
+        color: white;
+        border-style: none;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.5s;
+        cursor: pointer;
+        position: relative;
+        transition: 0.5s;
+        content: '\1F846';
+    }
+
+    .boton {
+        display: inline-block;
+        max-width: 45%;
+        margin-right: 4em;
+    }
+
+    .boton-copiar {
+        display: block;
+        margin: 15px auto;
+        padding: 1.2em 1em;
+        max-width: 60%;
+    }
+
+    .sin-msj {
+        display: block;
+        width: 70%;
+        margin: 3em auto 3em;
+        font-size: 0.6em;
+        background-color: #15359e4b;
+        border-radius: 5%;
+    }
+
+    .sin-msj img {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 2em;
+    }
+
+    .empty {
+        width: 80%;
+        text-align: center;
+        margin: 2em 3em 2em 3em;
+        font-size: 1em;
+        padding: 1em 1em 2em 1em;
+    }
+
+    .con-msj {
+        display: block;
+        width: 75%;
+        margin: 20px 60px;
+        padding: 2%;
+    }
+
+    .input-secundario {
+        display: block;
+        width: 90%;
+        height: 250px;
+        padding: 10px;
+        margin: 2.5% auto;
+        border-radius: 5%;
+        border-style: none;
+        box-shadow: 0px 0px 20px 0px #A5A1EA;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 992px) {
+
+    .logo img {
+        width: 5%;
+    }
+
+    .titulo-principal {
+        font-size: 1em;
+        margin: 1em;
+        color: #15359e;
+        text-align: center;
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+    }
+
+    .flex-form {
+        width: 50%;
+    }
+
+    .caja-texto {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        margin-top: 1em;
+        margin-left: 1em;
+        border-radius: 5%;
+    }
+
+    .input-ppal {
+        min-width: 95%;
+        height: 300px;
+        margin: 0.5em;
+        resize: none;
+        border-radius: 5%;
+        border-style: none;
+        padding: 1em;
+        box-shadow: 0px 0px 20px 0px #A5A1EA;
+    }
+
+    .pie-texto {
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+        margin-left: 2em;
+        font-size: 0.7em;
+    }
+
+    .caja-botones {
+        width: 100%;
+        margin: 10px 50px;
+    }
+
+    .boton,
+    .boton-copiar {
+        font-size: 0.6em;
+        padding: 1.2em;
+        background-color: #15359e;
+        color: white;
+        border-style: none;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.5s;
+        cursor: pointer;
+        position: relative;
+        transition: 0.5s;
+        content: '\1F846';
+    }
+
+    .boton {
+        display: inline-block;
+        max-width: 45%;
+        margin-right: 4em;
+    }
+
+    .boton-copiar {
+        display: block;
+        margin: 15px auto;
+        padding: 1.2em 1em;
+        max-width: 60%;
+    }
+
+    .sin-msj {
+        width: 40%;
+        min-height: 350px;
+        margin: 1.5em auto 3em;
+        font-size: 0.8em;
+        background-color: #15359e4b;
+        border-radius: 5%;
+    }
+
+    .sin-msj img {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 2em;
+    }
+
+    .empty {
+        width: 80%;
+        text-align: center;
+        margin: 2em 3em 2em 3em;
+        font-size: 1em;
+        padding: 1em 1em 1em 0;
+    }
+
+    .con-msj {
+        width: 45%;
+        min-height: 350px;
+        margin-top: 0.4em;
+    }
+
+    .input-secundario {
+        width: 80%;
+        height: 80%;
+        margin: 10px 30px;
+        border-radius: 5%;
+        border-style: none;
+        padding: 1em;
+        box-shadow: 0px 0px 20px 0px #A5A1EA;
+    }
+
+    .boton-copiar {
+        display: block;
+        margin: 0 auto;
+        font-size: 0.6em;
+        padding: 15px 10px;
+        max-width: 60%;
+        border-radius: 4px;
+        background-color: #15359e;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        transition: all 0.5s;
+        cursor: pointer;
+        position: relative;
+        transition: 0.5s;
+        content: '\1F846';
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+    body {
+        font-size: 1.5em;
+        margin: 5%;
+    }
+
+    .logo {
+        display: inline-block;
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+    }
+
+    .titulo-principal {
+        width: 60%;
+        margin-left: 20px;
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+
+    .flex-form {
+        width: 50%;
+    }
+
+    .input-ppal {
+        width: 90%;
+        min-height: 400px;
+        margin-left: 1em;
+        padding: 2em 2em;
+        border-radius: 5%;
+        border-style: none;
+        resize: none;
+        font-size: 0.8em;
+        box-shadow: 0px 0px 20px 0px #A5A1EA;
+    }
+
+    .pie-texto {
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+        margin-left: 2em;
+        font-size: 0.7em;
+    }
+
+    .caja-botones {
+        width: 100%;
+        margin: 10px 50px;
+    }
+
+    .boton,
+    .boton-copiar {
+        font-size: 0.6em;
+        padding: 1.2em;
+        background-color: #15359e;
+        color: white;
+        border-style: none;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .boton {
+        display: inline-block;
+        max-width: 50%;
+        margin-right: 1em;
+    }
+
+    .boton-copiar {
+        display: block;
+        margin: 1em auto;
+        padding: 1.2em 1em;
+        max-width: 60%;
+    }
+
+    .sin-msj {
+        width: 50%;
+        min-height: 350px;
+        margin: 0 auto 3em;
+        font-size: 0.8em;
+        background-color: #15359e4b;
+        border-radius: 5%;
+    }
+
+    .sin-msj img {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 2em;
+    }
+
+    .empty {
+        width: 80%;
+        text-align: center;
+        margin: 2em 3em 2em 3em;
+        font-size: 1em;
+        padding: 1em 1em 1em 0;
+    }
+
+    .con-msj {
+        width: 50%;
+        min-height: 350px;
+
+    }
+
+    .input-secundario {
+        width: 100%;
+        min-height: 350px;
+        margin: 0 auto;
+        border-radius: 5%;
+        border-style: none;
+        padding: 2em 2em;
+        font-size: 0.8em;
+        resize: none;
+        box-shadow: 0px 0px 20px 0px #A5A1EA;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    body {
+        font-size: 1.5em;
+        margin: 5%;
+    }
+
+    .logo {
+        display: inline-block;
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+    }
+
+    .titulo-principal {
+        width: 60%;
+        margin-left: 20px;
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+
+    .flex-form {
+        width: 50%;
+    }
+
+    .input-ppal {
+        width: 90%;
+        min-height: 400px;
+        margin-left: 1em;
+        padding: 2em 2em;
+        border-radius: 5%;
+        border-style: none;
+        resize: none;
+        font-size: 0.8em;
+        box-shadow: 0px 0px 20px 0px #A5A1EA;
+    }
+
+    .pie-texto {
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+        margin-left: 2em;
+        font-size: 0.7em;
+    }
+
+    .caja-botones {
+        width: 100%;
+        margin: 10px 50px;
+    }
+
+    .boton,
+    .boton-copiar {
+        font-size: 0.6em;
+        padding: 1.2em;
+        background-color: #15359e;
+        color: white;
+        border-style: none;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .boton {
+        display: inline-block;
+        max-width: 50%;
+        margin-right: 1em;
+    }
+
+    .boton-copiar {
+        display: block;
+        margin: 1em auto;
+        padding: 1.2em 1em;
+        max-width: 60%;
+    }
+
+    .sin-msj {
+        width: 50%;
+        min-height: 350px;
+        margin: 0 auto 3em;
+        font-size: 0.8em;
+        background-color: #15359e4b;
+        border-radius: 5%;
+    }
+
+    .sin-msj img {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 2em;
+    }
+
+    .empty {
+        width: 80%;
+        text-align: center;
+        margin: 2em 3em 2em 3em;
+        font-size: 1em;
+        padding: 1em 1em 1em 0;
+    }
+
+    .con-msj {
+        width: 50%;
+        min-height: 350px;
+
+    }
+
+    .input-secundario {
+        width: 100%;
+        min-height: 350px;
+        margin: 0 auto;
+        border-radius: 5%;
+        border-style: none;
+        padding: 2em 2em;
+        font-size: 0.8em;
+        resize: none;
+        box-shadow: 0px 0px 20px 0px #A5A1EA;
+    }
+}
